@@ -1,0 +1,14 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "fanny/learn-grpc/calculator/proto";
+
+message CalculatorRequest {
+    int32 Num1 = 1;
+    int32 Num2 = 2;
+}
+
+message CalculatorResponse {
+    int32 Result = 1;
+}

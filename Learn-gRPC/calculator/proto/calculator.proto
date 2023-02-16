@@ -1,0 +1,11 @@
+syntax = "proto3";
+
+package calculator;
+
+option go_package = "fanny/learn-grpc/calculator/proto";
+
+import "sum.proto";
+
+service CalculatorService {
+    rpc Calculator(CalculatorRequest) returns (CalculatorResponse);
+}
